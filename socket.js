@@ -15,7 +15,6 @@ module.exports = {
     },
     getIO: () => {
         if (!io) {
-            //this error will be caught by the catch block in the place it was called
             throw new Error('Socket.io not initialized!');
     }
     return io;
